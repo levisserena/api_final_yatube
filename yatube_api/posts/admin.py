@@ -26,7 +26,7 @@ class CommentAdmin(admin.ModelAdmin):
 class GroupAdmin(admin.ModelAdmin):
     """Модель для администрирования групп сообщества."""
 
-    list_display = ('pk', 'slug', 'title',  'description')
+    list_display = ('pk', 'slug', 'title', 'description')
 
 
 @admin.register(Follow)
