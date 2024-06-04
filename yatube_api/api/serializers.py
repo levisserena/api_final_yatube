@@ -12,8 +12,8 @@ from posts.models import Comment, Group, Follow, Post, User
 
 
 class AuthorMixinSerializer(ModelSerializer):
-    """Миксин сериализатора на базе ModelSerializer.
-
+    """
+    Миксин сериализатора на базе ModelSerializer.
     Добавляет поле author, подвязанное к модели User.
     """
 
@@ -75,15 +75,14 @@ class FollowSerializer(ModelSerializer):
             ),
         )
 
-    def validate_following(self, attrs):
-        """Валидирует поля following.
-
+    def validate_following(self, following):
+        """
+        Валидирует поле following.
         Подписываться на самого себя нельзя.
         Если в POST запросе будет имя, совпавшее с именем пользователем,
         который отправил запрос, будет ошибка, и запись не создастся.
         """
-        user = self.context['request'].user.username
-        following = attrs.username
+        user = self.context['request'].user
         if user == following:
             raise ValidationError(detail='Подписаться на самого себя нельзя.')
-        return attrs
+        return following
