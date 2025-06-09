@@ -2,10 +2,10 @@
 
 ### О проекте.
 Проект api_yatube позволяет вести форум, в котором пользователи могут оставлять сообщения, а так же комментарии к сообщениям других пользователей. Поддедрживается подписка пользователей друг на друга.
-Особенностью проекта является возможность отправлять запросы посредством API.
 ___
-### Информация об авторе.
-Акчурин Лев Ливатович.<br>Студент курса Яндекс Практикума Python-разработчик плюс.
+### Информация об авторах.
+Акчурин Лев Ливатович.<br>
+[Страничка GitHub](https://github.com/levisserena)
 ___
 ### При создании проекта использовалось:
 - язык программирования Python версии 3.9.13;
@@ -16,39 +16,33 @@ ___
 ___
 ### Как развернуть проект.
 Чтобы развернуть проект необходимо следующие:
-- Форкнуть проект себе на репозиторий с:
-```
-https://github.com/levisserena/api_final_yatube
-```
 
->*активная ссылка под этой кнопкой* -> [КНОПКА](https://github.com/levisserena/api_final_yatube)
 - Клонировать репозиторий со своего GitHub и перейти в него в командной строке:
 
 ```
-git clone https://github.com/<имя вашего акаунта>/api_yatube.git
+git clone git@github.com:levisserena/api_final_yatube.git
 ```
-
+>*активная ссылка под этой кнопкой* -> [КНОПКА](https://github.com/levisserena/api_final_yatube)
 ```
 cd yatube_api
 ```
 
 - Создать и активировать виртуальное окружение:
 
+Windows
 ```
 python -m venv venv
+source venv/Scripts/activate
+```
+Linux
+```
+python3 -m venv venv
+source3 venv/bin/activate
 ```
 
-```
-source venv/bin/activate
-```
-
-- Установить зависимости из файла requirements.txt:
-
+- Установить зависимости:
 ```
 python -m pip install --upgrade pip
-```
-
-```
 pip install -r requirements.txt
 ```
 
