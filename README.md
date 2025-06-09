@@ -8,16 +8,16 @@ ___
 [Страничка GitHub](https://github.com/levisserena)
 ___
 ### При создании проекта использовалось:
-- язык программирования Python версии 3.9.13;
-- фреймворк Django версии 3.2.16
-- фреймворк Django Rest Framework версии 3.12.4
-- базы данных выполнены на Sqlite3
-- API реализуется с использованием JSON
+- Python 3.9.13;
+- Django 3.2.16
+- Django Rest Framework 3.12.4
+- Sqlite3
+- JSON
 ___
 ### Как развернуть проект.
 Чтобы развернуть проект необходимо следующие:
 
-- Клонировать репозиторий со своего GitHub и перейти в него в командной строке:
+- Клонировать проект со GitHub:
 
 ```
 git clone git@github.com:levisserena/api_final_yatube.git
